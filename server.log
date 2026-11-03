@@ -1,0 +1,3 @@
+[邮件] 未配置 SMTP，验证码将以开发模式输出到控制台。生产环境请在 .env 中配置 SMTP_HOST/SMTP_PORT/SMTP_USER/SMTP_PASS/SMTP_FROM。
+月之海 已启动: http://localhost:3000 (pid 8940)
+[开发模式] 验证码 -> fix@t.com: 234015 (10 分钟内有效)

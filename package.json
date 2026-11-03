@@ -1,0 +1,24 @@
+{
+  "name": "webown",
+  "version": "1.0.0",
+  "description": "个人小站 - 二次元主题博客/图库/项目展示（含管理系统）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^13.0.3",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.13.0",
+    "multer": "^2.0.1",
+    "nodemailer": "^10.3.0"
+  }
+}

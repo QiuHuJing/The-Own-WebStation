@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="月之海 - 星娅小站：文章、图库、GitHub 项目与赞助">
+  <title>月之海 - 星娅小站</title>
+  <link rel="stylesheet" href="/css/style.css?v=20261102m">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🌙</text></svg>">
+</head>
+<body>
+  <!-- 进入动画 -->
+  <div id="entry-overlay" aria-hidden="true">
+    <div class="entry-inner">
+      <div class="entry-moon">🌙</div>
+    <div class="entry-title">月之海</div>
+    <div class="entry-sub" data-i18n="entry.sub">「 如霜的月色，落在你的小站 」</div>
+      <div class="entry-bar"><i></i></div>
+    </div>
+  </div>
+
+  <!-- 顶部导航 -->
+  <header class="nav glass" id="topnav">
+    <a class="nav-logo" href="#/">
+      <span class="logo-moon">🌙</span><span class="logo-text" id="site-name">月之海</span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="#/" data-nav="home" data-i18n="nav.home">文章</a>
+      <a href="#/gallery" data-nav="gallery" data-i18n="nav.gallery">图库</a>
+      <a href="#/projects" data-nav="projects" data-i18n="nav.projects">项目</a>
+      <a href="#/social" data-nav="social" data-i18n="nav.social">动态</a>
+      <a href="#/announcements" data-nav="announcements" data-i18n="nav.announcements">公告</a>
+      <a href="#/sponsor" data-nav="sponsor" data-i18n="nav.sponsor">赞助</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#/search" class="icon-btn search-btn" data-i18n-title="nav.search" title="搜索" aria-label="搜索">🔍</a>
+      <button id="nav-toggle" class="nav-toggle" data-i18n-aria="nav.menu" aria-label="展开菜单" aria-expanded="false">☰</button>
+      <button id="lang-toggle" class="icon-btn lang-btn" title="切换为英文 / Switch to English" aria-label="切换语言">EN</button>
+      <button id="theme-toggle" class="icon-btn" data-i18n-title="theme.toggle" data-i18n-aria="theme.toggle" title="切换主题" aria-label="切换主题">🌙</button>
+      <div id="user-chip" class="user-chip"></div>
+    </div>
+  </header>
+
+  <!-- 主内容 -->
+  <main id="app" class="app-main"></main>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="footer-social">
+      <a class="social-btn" href="https://wpa.qq.com/msgrd?v=3&amp;uin=1782764161&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer" title="QQ" aria-label="QQ">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><defs><mask id="sm-qq-eye"><rect width="24" height="24" fill="#fff"/><circle cx="9.4" cy="8" r="1.3" fill="#000"/><circle cx="14.6" cy="8" r="1.3" fill="#000"/></mask></defs><g fill="currentColor" mask="url(#sm-qq-eye)"><circle cx="12" cy="14" r="7"/><circle cx="12" cy="8" r="5"/></g></svg>
+      </a>
+      <a class="social-btn" href="https://github.com/QiuHuJing" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+      <a class="social-btn" href="https://space.bilibili.com/3546782453730052" target="_blank" rel="noopener noreferrer" title="Bilibili" aria-label="Bilibili">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373l2.853 2.747c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906l-1.174 1.12zM18.93 6.8H5.07c-.853.018-1.537.284-2.052.8-.515.515-.78 1.2-.8 2.053v7.36c.02.853.284 1.538.8 2.053.515.515 1.199.781 2.052.8h13.86c.853-.019 1.538-.284 2.053-.8.515-.515.782-1.2.8-2.053v-7.36c-.018-.853-.285-1.538-.8-2.053-.515-.516-1.2-.782-2.053-.8zM7.413 9.707a1.28 1.28 0 0 1 .906-.373c.356 0 .658.124.907.373l2.747 2.747 2.747-2.747a1.28 1.28 0 0 1 .906-.373c.356 0 .658.124.907.373.249.25.373.551.373.907 0 .355-.124.657-.373.906l-2.747 2.747 2.747 2.747c.249.25.373.551.373.906 0 .356-.124.658-.373.907-.25.249-.551.373-.907.373a1.28 1.28 0 0 1-.906-.373L12 16.24l-2.747 2.747a1.28 1.28 0 0 1-.906.373c-.356 0-.658-.124-.907-.373-.249-.249-.373-.551-.373-.906 0-.355.124-.658.373-.907l2.747-2.747-2.747-2.747c-.249-.25-.373-.551-.373-.906 0-.356.124-.658.373-.907z"/></svg>
+      </a>
+    </div>
+    <p id="footer-text" data-i18n="footer.default">月之海 · 星娅小站 — 潮汐因月亮而有了方向，文字因被阅读而存在</p>
+    <!-- 备案号：仅在后台「站点设置」填写后才显示 -->
+    <p id="footer-icp" hidden></p>
+  </footer>
+
+  <!-- 条款同意弹窗（首次访问） -->
+  <div id="terms-modal" class="modal-mask hidden">
+    <div class="modal card">
+      <h2 data-i18n="terms.welcome">欢迎来到 月之海 ✨</h2>
+      <div id="terms-modal-body" class="terms-body" data-i18n="terms.loading">加载中…</div>
+      <div class="modal-actions" id="terms-modal-actions"></div>
+    </div>
+  </div>
+
+  <!-- 轻提示 -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/js/app.js?v=20261102m"></script>
+</body>
+</html>
